@@ -1,6 +1,9 @@
 To excute the project> instead of runserver here,
 we have to manage.py runsslserver 127.0.0.1:8000
 
+Admin login details:-
+username:- admin
+password :- admintest
 Used additional library's
 django-allauth > for the api auth and  model and templates for social login's,
 django-sslserver > for the https access of the local host for the fb app access.
