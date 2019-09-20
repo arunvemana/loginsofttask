@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user details</title>
+</head>
+<body>
+<table style="margin-left: 35%;">
+ <h1>{% for key,value in content.items %}
+
+     {% if key == 'picture' %}
+         <img style="margin-left: 35%;margin-top: 9%;" src=" {{ value.data.url }}">
+{#         {{ value.data.url }}#}
+         {% else %}
+ <tr><td>{{ key }}</td>  <td>{{ value }}</td>  </tr>
+     {% endif %}
+ {% endfor %}</h1></table>
+
+<a style="margin-left: 35%;"href="{% url "account_logout" %}">logout</a>
+</body>
+</html>
